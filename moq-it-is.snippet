@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Moq It.Is</Title>
+            <Description>
+                Specify an expected value
+            </Description>
+            <Shortcut>MoqItIs</Shortcut>
+            <Author>Chris Stead</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[It.Is($ExpectedValue$)]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>ExpectedValue</ID>
+                    <ToolTip>Expected value to assert agains</ToolTip>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Moq</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

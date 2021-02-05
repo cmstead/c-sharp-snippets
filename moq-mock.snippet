@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Moq Mock</Title>
+            <Description>
+                Create a new Mock
+            </Description>
+            <Shortcut>MoqMock</Shortcut>
+            <Author>Chris Stead</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[var $MockVariableName$Mock = new Mock<$MockType$>();]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>MockVariableName</ID>
+                    <ToolTip>Variable name for mock</ToolTip>
+                    <Default>ObjectMockName</Default>
+                </Literal>
+                <Literal>
+                    <ID>MockType</ID>
+                    <ToolTip>Object type to mock</ToolTip>
+                    <Default>MockObjectType</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Moq</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
