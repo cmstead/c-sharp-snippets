@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XUnit Assert.Equal</Title>
+            <Description>
+                Assert equality
+            </Description>
+            <Shortcut>XUnitAssertEqual</Shortcut>
+            <Author>Chris Stead</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[Assert.Equal($ActualValue$, $ExpectedValue$)]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>ActualValue</ID>
+                    <ToolTip>Actual value to assert equality on</ToolTip>
+                    <Default>actualValue</Default>
+                </Literal>
+                <Literal>
+                    <ID>ExpectedValue</ID>
+                    <ToolTip>Expected value to assert equality on</ToolTip>
+                    <Default>expectedValue</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Xunit</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
